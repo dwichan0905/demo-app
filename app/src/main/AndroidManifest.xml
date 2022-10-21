@@ -15,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DeteksiGempaDanTsunami"
         android:usesCleartextTraffic="true">
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove" />
         <activity
             android:name=".ui.RegisterActivity"
             android:exported="false" />
