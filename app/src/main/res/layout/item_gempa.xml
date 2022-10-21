@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:drawableStart="@drawable/ic_time_16"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/tv_magnitudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_earthquake_12"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            tools:text="@string/text_magnitudo" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_location_12"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            tools:text="@string/text_wilayah" />
+
+        <TextView
+            android:id="@+id/tv_kedalaman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_kedalaman_12"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            tools:text="@string/text_kedalaman" />
+
+        <TextView
+            android:id="@+id/tv_potensi_dirasakan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_tsunami_12"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            tools:text="@string/text_potensi" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

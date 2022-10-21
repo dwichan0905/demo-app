@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="@string/reminder_header">
+
+        <CheckBoxPreference
+            android:id="@+id/checkbox"
+            app:key="@string/pref_key_notify"
+            app:summary="@string/pref_notify_summary"
+            app:title="@string/pref_notify_name" />
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

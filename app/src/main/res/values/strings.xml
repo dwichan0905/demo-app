@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Deteksi Gempa dan Tsunami</string>
+    <string name="title_home">Home</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_edukasi">Edukasi</string>
+    <string name="title_gempa_dirasakan">Gempa Dirasakan</string>
+    <string name="title_gempa_terkini">Gempa Terkini</string>
+    <string name="text_magnitudo">Magnitudo: %s</string>
+    <string name="text_wilayah">Wilayah: %s</string>
+    <string name="text_kedalaman">Kedalaman: %s</string>
+    <string name="text_potensi">Potensi: %s</string>
+    <string name="text_dirasakan">Dirasakan: %s</string>
+    <string name="magnitude">Magnitude</string>
+    <string name="kedalaman">Kedalaman</string>
+    <string name="text_lokasi_gempa">Lokasi Gempa</string>2
+
+    <!-- Mapbox -->
+    <string name="access_token" translatable="false">pk.eyJ1IjoidmlraXdhaHl1ZGkiLCJhIjoiY2wxb205dWhnMG1qeDNscGRza2ZnNmxpYSJ9.o5oCGl2Hk0PVT52BI4st3Q</string>
+
+    <!-- Notification -->
+    <string name="reminder_header">Pengingat</string>
+    <string name="pref_key_notify">key_notification</string>
+    <string name="notify_channel_name">Task Reminder</string>
+    <string name="pref_notify_name">Notifikasi</string>
+    <string name="pref_notify_summary">Notifikasi pengingat gempa terkini dan dirasakan</string>
+    <string name="text_sumber_dari">Sumber dari</string>
+    <string name="text_app_logo">App Logo</string>
+    <string name="text_bmkg_logo">BMKG Logo</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="nama">Nama</string>
+    <string name="register">Register</string>
+    <string name="ready">Already Have Account?</string>
+    <string name="logout">Logout</string>
+    <string name="text_lokasi_user">Lokasi User</string>
+    <string name="jarak_user_gempa">Jarak Lokasi Gempa</string>
+    <string name="txt_loading">Loading...</string>
+    <string name="pref_notify_last_wilayah">pref_notify_last_wilayah</string>
+    <string name="pref_notify_last_shakemap">pref_notify_last_shakemap</string>
+    <string name="pref_notify_last_kedalaman">pref_notify_last_kedalaman</string>
+    <string name="pref_notify_last_jam">pref_notify_last_jam</string>
+    <string name="pref_notify_last_coordinates">pref_notify_last_coordinates</string>
+    <string name="pref_notify_last_prediksi">pref_notify_last_prediksi</string>
+    <string name="pref_notify_last_tanggal">pref_notify_last_tanggal</string>
+    <string name="pref_notify_last_bujur">pref_notify_last_bujur</string>
+    <string name="pref_notify_last_magnitude">pref_notify_last_magnitude</string>
+    <string name="pref_notify_last_lintang">pref_notify_last_lintang</string>
+    <string name="pref_notify_last_datetime">pref_notify_last_datetime</string>
+    <string name="notify_content">Gempa bumi berkekuatan %s SR telah terjadi pada %s %s dengan kedalaman %s. %s. %s</string>
+    <string name="notify_title">Informasi Gempa Bumi pada tanggal %s</string>
+</resources>

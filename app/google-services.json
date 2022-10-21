@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "649682017156",
+    "project_id": "klasifikasitsunamiapp",
+    "storage_bucket": "klasifikasitsunamiapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649682017156:android:495fcac416f4270a0d9bd1",
+        "android_client_info": {
+          "package_name": "com.vikiwahyudi.deteksigempadantsunami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649682017156-igpfp7u7eths1ult9tk5ie2e082oldin.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vikiwahyudi.deteksigempadantsunami",
+            "certificate_hash": "7a8048d57e53e8afbc827fe1d7aa7fb083c56c99"
+          }
+        },
+        {
+          "client_id": "649682017156-f5atie4biomssdhge5pmcl2jmq2mk0j6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSKv0MuXFzIKaLq0M8WyYW7uUOxhT_DcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649682017156-f5atie4biomssdhge5pmcl2jmq2mk0j6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

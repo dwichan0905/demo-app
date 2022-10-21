@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_gempa_terkini"
+        android:icon="@drawable/ic_earthquake"
+        android:title="@string/title_gempa_terkini" />
+
+    <item
+        android:id="@+id/navigation_gempa_dirasakan"
+        android:icon="@drawable/ic_earthquake_dissaster"
+        android:title="@string/title_gempa_dirasakan" />
+
+    <item
+        android:id="@+id/navigation_edukasi"
+        android:icon="@drawable/ic_article"
+        android:title="@string/title_edukasi" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/title_settings" />
+</menu>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="2dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="#F4F4F4"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_earthquake_red" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_time" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="50dp"
+            android:rotationX="180"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_kedalaman" />
+
+        <TextView
+            android:id="@+id/tv_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cambo"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+            tools:text="16 Aug 2018" />
+
+        <TextView
+            android:id="@+id/tv_magnitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cambo"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            tools:text="5.5" />
+
+        <TextView
+            android:id="@+id/tv_depth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cambo"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            tools:text="10 Km" />
+
+        <TextView
+            android:id="@+id/tv_jam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambo"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_tanggal"
+            app:layout_constraintStart_toStartOf="@+id/tv_tanggal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_tanggal"
+            tools:text="10:10:20 WIB" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambo"
+            android:text="@string/magnitude"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_magnitude"
+            app:layout_constraintStart_toStartOf="@+id/tv_magnitude"
+            app:layout_constraintTop_toBottomOf="@+id/tv_magnitude" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambo"
+            android:text="@string/kedalaman"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_depth"
+            app:layout_constraintStart_toStartOf="@+id/tv_depth"
+            app:layout_constraintTop_toBottomOf="@+id/tv_depth" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/cambo"
+            android:text="@string/text_lokasi_gempa"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cambo"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/text_lokasi_user"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            tools:layout_editor_absoluteX="211dp" />
+
+        <TextView
+            android:id="@+id/tv_coordinate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_coordinate"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:text="0.56 LU 98.40 BT" />
+
+        <TextView
+            android:id="@+id/tv_coordinate_user"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_coordinate"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            android:gravity="center_vertical"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView12"
+            tools:text="0.56 LU 98.40 BT" />
+
+        <TextView
+            android:id="@+id/tv_wilayah"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_coordinate"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coordinate"
+            tools:text="65 Km Tenggara NIASSELATAN SUMUT" />
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:text="@string/jarak_user_gempa"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_coordinate_user"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coordinate_user" />
+
+        <TextView
+            android:id="@+id/tv_jarak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/tv_coordinate_user"
+            tools:text="65 Km" />
+
+        <TextView
+            android:id="@+id/tv_potensi_or_dirasakan"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_tsunami"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_wilayah"
+            app:layout_constraintTop_toBottomOf="@+id/tv_wilayah"
+            tools:text="tidak berpotensi TSUNAMI" />
+
+
+        <TextView
+            android:id="@+id/tv_terdampak"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_dirasakan_30"
+            android:drawablePadding="4dp"
+            android:fontFamily="@font/cambo"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_coordinate_user"
+            app:layout_constraintTop_toBottomOf="@+id/textView13"
+            tools:text="terdampak tsunami" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
