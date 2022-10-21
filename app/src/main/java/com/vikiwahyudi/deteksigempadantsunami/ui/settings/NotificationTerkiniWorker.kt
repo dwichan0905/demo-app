@@ -1,5 +1,6 @@
 package com.vikiwahyudi.deteksigempadantsunami.ui.settings
 
+import android.app.Application
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.app.PendingIntent
@@ -14,6 +15,7 @@ import androidx.work.WorkerParameters
 import com.vikiwahyudi.deteksigempadantsunami.R
 import com.vikiwahyudi.deteksigempadantsunami.data.DataGempaRepository
 import com.vikiwahyudi.deteksigempadantsunami.data.remote.response.terkini.TerkiniResponse
+import com.vikiwahyudi.deteksigempadantsunami.di.Injection
 import com.vikiwahyudi.deteksigempadantsunami.network.StatusResponse
 import com.vikiwahyudi.deteksigempadantsunami.ui.HomeActivity
 import com.vikiwahyudi.deteksigempadantsunami.utils.CHANNEL_NAME
@@ -23,10 +25,11 @@ import com.vikiwahyudi.deteksigempadantsunami.utils.NOTIFICATION_CHANNEL_ID
 
 class NotificationTerkiniWorker(
     ctx: Context,
-    params: WorkerParameters,
-    private val networkRepository: DataGempaRepository,
-    private val notificationPreference: NotificationPreference
+    params: WorkerParameters
 ) : Worker(ctx, params) {
+
+    private lateinit var networkRepository: DataGempaRepository
+    private lateinit var notificationPreference: NotificationPreference
 
     private fun getPendingIntent(gempaItem: TerkiniResponse): PendingIntent? {
         val intent = Intent(applicationContext, HomeActivity::class.java).apply {
@@ -40,6 +43,9 @@ class NotificationTerkiniWorker(
 
     override fun doWork(): Result {
         IdlingResources.beginIdle()
+        networkRepository = Injection.provideRepository(applicationContext)
+        notificationPreference = NotificationPreference(applicationContext as Application)
+
         val api = networkRepository.getAutoGempaSync()
         val local = notificationPreference.initComponents().getLastInfo()
 
