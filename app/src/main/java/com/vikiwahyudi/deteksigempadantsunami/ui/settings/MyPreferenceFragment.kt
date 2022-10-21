@@ -32,7 +32,7 @@ class MyPreferenceFragment : PreferenceFragmentCompat() {
             val workManager = WorkManager.getInstance(requireContext())
             val periodicWorkRequest = PeriodicWorkRequest.Builder(
                 NotificationTerkiniWorker::class.java,
-                3,
+                15, // gak bisa dibawah 15 menit
                 TimeUnit.MINUTES
             ).build()
 
